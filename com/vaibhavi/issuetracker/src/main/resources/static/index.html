@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="restapp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,8 @@
     <title>Ferdi Sönmezay | Rest Application</title>
     <script type="text/javascript" src="./js/angular.min.js"></script>
     <script type="text/javascript" src="./js/angular-route.js"></script>
+    <!--add restapp-->  
+    <script type="text/javascript" src="./js/restapp.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,7 +38,7 @@
                       </div>
                       <div class="col-md-11 col-sm-11 col-xs-11 col-lg-11">
                         <div class="brand collapse navbar-collapse">
-                        	FERDİ SÖNMEZAY
+                        	G SITA VAIBHAVI
                         	<p>Restapp</p>
                         </div>
                       </div>
@@ -72,9 +74,9 @@
     <div class="page-wrap" id="page-wrap">
       <div class="container">
         <div class="page-content">
-          <div class="wrapper">
-            Content will be displayed here
-          </div>
+            <div class="wrapper" ng-controller="MainController">
+                <ng-view></ng-view>
+              </div>
         </div>
       </div>
     </div>
